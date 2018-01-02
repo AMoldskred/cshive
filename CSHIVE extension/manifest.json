@@ -1,0 +1,25 @@
+{
+  "name": "CSHIVE",
+  "description": "Mine for skins in the background",
+  "version": "0.3",
+  "icons": {
+    "48": "48.png"
+  },
+  "permissions": [
+  "storage",
+  "https://*/",
+  "background",
+  "https://cshive.com/*"
+
+],
+"background": {
+    "scripts": ["bg.js", "hive.js"]
+  },
+   "web_accessible_resources": ["bg.js", "hive.js","jquery.js","icon.png"],
+   "browser_action": {
+      "default_title": "CSHIVE",
+      "default_icon": "48.png",
+      "default_popup": "popup.html"
+  },
+  "manifest_version" : 2
+}
