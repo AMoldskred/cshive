@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSHIVE</title>
+</head>
+<body>
+
+<img src="/img/ms-icon-310x310.png" class="pulse">
+<style type="text/css">
+img {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 310px;
+   height: 310px;
+   margin-top: -155px !important; /* Half the height */
+   margin-left: -155px !important; /* Half the width */
+}
+	.pulse {
+  animation: pulse 8s infinite;
+  margin: 0 auto;
+  display: table;
+  margin-top: 50px;
+  animation-direction: alternate;
+  -webkit-animation-name: pulse;
+  animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+</style>
+<script>
+  window.addEventListener("online", function(){
+    window.location = "/index.php";
+    }, false);
+</script>
+</body>
+</html>
